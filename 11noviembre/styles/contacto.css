@@ -1,0 +1,93 @@
+.contenedor{
+    background-color: gray;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid rgb(98, 98, 98);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+textarea:focus,input:focus{
+    background-color: rgb(255, 209, 252);
+}
+
+input[type="submit"]:hover{
+    background-color: greenyellow;
+}
+
+
+.active{
+    background-color: rgb(111, 121, 255);
+    width: 150px;
+    text-align: left;
+}
+
+
+.nav-phone,.access-menu{
+    display: none;
+}
+
+svg{
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+    .access-menu{
+        display: block;
+    }
+    .access-menu{
+        color: white;
+        width: 25px;
+        height: 25px;
+        float: right;
+        margin-top: 0.5rem;
+    }
+    .nav-desktop{
+        display: none;
+    }
+    .nav-phone {
+        display: none;
+        list-style: none;
+        padding: 0;
+    }
+    .nav-phone.active {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        list-style-type: none;
+        background-color: rgb(67, 67, 255);
+        width: 180px;
+        height: 100vh ;
+        z-index: 1;
+        margin: 0;
+    }
+    
+    
+    
+}
